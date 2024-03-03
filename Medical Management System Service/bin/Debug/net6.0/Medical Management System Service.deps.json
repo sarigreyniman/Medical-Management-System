@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Medical Management System Service/1.0.0": {
+        "runtime": {
+          "Medical Management System Service.dll": {}
+        }
+      },
+      "Medical Management System Core/1.0.0": {
+        "runtime": {
+          "Medical Management System Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Medical Management System Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Medical Management System Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

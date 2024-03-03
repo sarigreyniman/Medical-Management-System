@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\bin\Debug\net6.0\Medical Management System Core.exe
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\bin\Debug\net6.0\Medical Management System Core.deps.json
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\bin\Debug\net6.0\Medical Management System Core.runtimeconfig.json
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\bin\Debug\net6.0\Medical Management System Core.dll
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\bin\Debug\net6.0\Medical Management System Core.pdb
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.AssemblyInfo.cs
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.dll
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\refint\Medical Management System Core.dll
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.pdb
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\Medical Management System Core.genruntimeconfig.cache
+C:\Users\User\Desktop\Medical Management System\Medical Management System Core\obj\Debug\net6.0\ref\Medical Management System Core.dll
