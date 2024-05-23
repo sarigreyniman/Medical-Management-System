@@ -18,29 +18,29 @@ namespace Medical_Management_System_Service
             _patientRepository = patientRepository;
         }
 
-        public List<Patient> GetPatients()
+        public List<Patient> GetPatientsAsync()
         {
-            return _patientRepository.GetPatients();
+            return _patientRepository.GetPatientsAsync();
         }
 
-        public Patient GetById(int id)
+        public Patient GetByIdAsync(int id)
         {
-            return _patientRepository.GetById(id);
+            return _patientRepository.GetByIdAsync(id);
         }
 
-        public Patient AddPatient(Patient patient)
+        public Patient AddPatientAsync(Patient patient)
         {
-            return _patientRepository.AddPatient(patient);
+            return _patientRepository.AddPatientAsync(patient);
         }
 
-        public Patient UpdatePatient(int id, Patient e)
+        public Patient UpdatePatientAsync(int id, Patient e)
         {
-            return _patientRepository.UpdatePatient(id, e);
+            return _patientRepository.UpdatePatientAsync(id, e);
         }
 
-        public void DeletePatient(int id)
+        public void DeletePatientAsync(int id)
         {
-            _patientRepository.DeletePatient(id);
+            _patientRepository.DeletePatientAsync(id);
         }
     }
 }

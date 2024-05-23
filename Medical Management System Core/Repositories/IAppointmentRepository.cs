@@ -9,14 +9,14 @@ namespace Medical_Management_System_Core.Repositories
 {
     public interface IAppointmentRepository
     {
-        List<Appointment> GetAppointmentes();
+        Task<List<Appointment>> GetAppointmentesAsync(); 
 
-        Appointment GetById(int id);
+        Task<Appointment> GetByIdAsync(int id);  
 
-        Appointment AddAppointment(Appointment appointment);
+        Task<Appointment> AddAppointmentAsync(Appointment appointment);  
 
-        Appointment UpdateAppointment(int id, Appointment appointment);
+        Task<Appointment> UpdateAppointmentAsync(int id, Appointment appointment);  
 
-        void DeleteAppointment(int id);
+        Task DeleteAppointmentAsync(int id); 
     }
 }

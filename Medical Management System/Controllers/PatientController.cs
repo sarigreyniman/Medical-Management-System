@@ -35,7 +35,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var list = _patientService.GetPatients();
+            var list = _patientService.GetPatientsAsync();
             var listDto = _mapper.Map<IEnumerable<PatientDto>>(list);
             return Ok(listDto);
         }
@@ -44,7 +44,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var patient = _patientService.GetById(id);
+            var patient = _patientService.GetByIdAsync(id);
             if (patient is null)
             {
                 return NotFound();
@@ -60,7 +60,7 @@ namespace Medical_Management_System.Controllers
         public ActionResult Post([FromBody] PatientPostModel patient)
         {
             var patientToAdd = new Patient { DateOfBirth=patient.DateOfBirth,MedicalHistory=patient.MedicalHistory,PatientName=patient.PatientName };
-            var newPatient  = _patientService.AddPatient(patientToAdd);
+            var newPatient  = _patientService.AddPatientAsync(patientToAdd);
             return Ok(newPatient);
 
         }
@@ -69,19 +69,19 @@ namespace Medical_Management_System.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Patient patient)
         {
-            return Ok(_patientService.UpdatePatient(id, patient));
+            return Ok(_patientService.UpdatePatientAsync(id, patient));
         }
 
         // DELETE api/<AppointmentController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var patient = _patientService.GetById(id);
+            var patient = _patientService.GetByIdAsync(id);
             if (patient is null)
             {
                 return NotFound();
             }
-            _patientService.DeletePatient(id);
+            _patientService.DeletePatientAsync(id);
             return NoContent();
         }
     }

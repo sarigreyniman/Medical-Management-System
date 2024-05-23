@@ -18,29 +18,29 @@ namespace Medical_Management_System_Service
             _prescriptionRepository = prescriptionRepository;
         }
 
-        public List<Prescription> GetPrescriptions()
+        public List<Prescription> GetPrescriptionsAsync()
         {
-            return _prescriptionRepository.GetPrescriptions();
+            return _prescriptionRepository.GetPrescriptionsAsync();
         }
 
-        public Prescription GetById(int id)
+        public Prescription GetByIdAsync(int id)
         {
-            return _prescriptionRepository.GetById(id);
+            return _prescriptionRepository.GetByIdAsync(id);
         }
 
-        public Prescription AddPrescription(Prescription prescription)
+        public Prescription AddPrescriptionAsync(Prescription prescription)
         {
-            return _prescriptionRepository.AddPrescription(prescription);
+            return _prescriptionRepository.AddPrescriptionAsync(prescription);
         }
 
-        public Prescription UpdatePrescription(int id, Prescription e)
+        public Prescription UpdatePrescriptionAsync(int id, Prescription e)
         {
-            return _prescriptionRepository.UpdatePrescription(id, e);
+            return _prescriptionRepository.UpdatePrescriptionAsync(id, e);
         }
 
-        public void DeletePrescription(int id)
+        public void DeletePrescriptionAsync(int id)
         {
-            _prescriptionRepository.DeletePrescription(id);
+            _prescriptionRepository.DeletePrescriptionAsync(id);
         }
     }
 }

@@ -9,14 +9,14 @@ namespace Medical_Management_System_Core.Services
 {
     public interface IPatientService
     {
-        List<Patient> GetPatients();
+        List<Patient> GetPatientsAsync();
 
-        Patient GetById(int id);
+        Patient GetByIdAsync(int id);
 
-       Patient AddPatient(Patient patient);
+       Patient AddPatientAsync(Patient patient);
 
-        Patient UpdatePatient(int id, Patient patient);
+        Patient UpdatePatientAsync(int id, Patient patient);
 
-        void DeletePatient(int id);
+        void DeletePatientAsync(int id);
     }
 }

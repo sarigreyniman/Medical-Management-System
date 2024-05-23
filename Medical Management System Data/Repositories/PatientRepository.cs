@@ -18,28 +18,28 @@ namespace Medical_Management_System_Data.Repositories
             _context = context;
         }
 
-        public Patient AddPatient(Patient patient)
+        public Patient AddPatientAsync(Patient patient)
         {
             _context.PatientList.Add(patient);
             return patient;
         }
 
-        public void DeletePatient(int id)
+        public void DeletePatientAsync(int id)
         {
             _context.PatientList.Remove(_context.PatientList.ToList().Find(c => c.PatientId == id));
         }
 
-        public Patient GetById(int id)
+        public Patient GetByIdAsync(int id)
         {
             return _context.PatientList.First(c => c.PatientId == id);
         }
 
-        public List<Patient> GetPatients()
+        public List<Patient> GetPatientsAsync()
         {
             return _context.PatientList.ToList();
         }
 
-        public Patient UpdatePatient(int id, Patient patient)
+        public Patient UpdatePatientAsync(int id, Patient patient)
         {
             var updatePatient = _context.PatientList.ToList().Find(u => u.PatientId == id);
             if (updatePatient != null)

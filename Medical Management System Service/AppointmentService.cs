@@ -20,30 +20,30 @@ namespace Medical_Management_System_Service
             _appointmentRepository = appointmentRepository;
         }
 
-        public List<Appointment> GetAppointmentes()
+        public List<Appointment> GetAppointmentesAsync()
         {
-            return _appointmentRepository.GetAppointmentes();
+            return _appointmentRepository.GetAppointmentesAsync();
         }
 
-        public Appointment GetById(int id)
+        public Appointment GetByIdAsync(int id)
         {
-            return _appointmentRepository.GetById(id);
+            return _appointmentRepository.GetByIdAsync(id);
         }
 
 
-        public Appointment AddAppointment(Appointment appointment)
+        public Appointment AddAppointmentAsync(Appointment appointment)
         {
-            return _appointmentRepository.AddAppointment(appointment);
+            return _appointmentRepository.AddAppointmentAsync(appointment);
         }
 
-        public Appointment UpdateAppointment(int id, Appointment e)
+        public Appointment UpdateAppointmentAsync(int id, Appointment e)
         {
-            return _appointmentRepository.UpdateAppointment(id, e);
+            return _appointmentRepository.UpdateAppointmentAsync(id, e);
         }
 
-        public void DeleteAppointment(int id)
+        public void DeleteAppointmentAsync(int id)
         {
-            _appointmentRepository.DeleteAppointment(id);
+            _appointmentRepository.DeleteAppointmentAsync(id);
         }
 
     }

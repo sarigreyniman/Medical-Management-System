@@ -19,37 +19,39 @@ namespace Medical_Management_System_Data.Repositories
             _context = context;
         }
 
+        public async Task<List<Appointment>> GetAppointmentesAsync()
+        {
+            return await _context.AppointmentList.ToListAsync();
+        }
+
         public async Task<Appointment> AddAppointmentAsync(Appointment appointment)
         {
             _context.AppointmentList.Add(appointment);
-          await  _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return appointment;
         }
 
-        public void DeleteAppointment(int id)
+        public async Task DeleteAppointmentAsync(int id)
         {
-            var appointment = GetById(id);
-            _context.AppointmentList.Remove(appointment);
-            _context.SaveChanges();
-           // _context.AppointmentList.Remove(_context.AppointmentList.ToList().Find(c => c.AppointmentId == id));
+            var appointment = await GetByIdAsync(id);
+            if (appointment != null)
+            {
+                _context.AppointmentList.Remove(appointment);
+                await _context.SaveChangesAsync();
+            }
         }
 
-        public Appointment GetById(int id)
+        public async Task<Appointment> GetByIdAsync(int id)
         {
-            return _context.AppointmentList.Include(a=>a.Patient).First(c => c.AppointmentId == id);
+            return await _context.AppointmentList.Include(a => a.Patient).FirstOrDefaultAsync(c => c.AppointmentId == id);
         }
-
-        public List<Appointment> GetAppointmentes()
+        public async Task<Appointment> UpdateAppointmentAsync(int id, Appointment appointment)
         {
-            return _context.AppointmentList.ToList();
-        }
-
-        public Appointment UpdateAppointment(int id, Appointment appointment)
-        {
-            var updateAppointmen = _context.AppointmentList.ToList().Find(u => u.AppointmentId == id);
+            var updateAppointmen = await _context.AppointmentList.FindAsync(id);
             if (updateAppointmen != null)
             {
                 updateAppointmen.PatientId = appointment.PatientId;
+                await _context.SaveChangesAsync();
                 return updateAppointmen;
             }
             return null;

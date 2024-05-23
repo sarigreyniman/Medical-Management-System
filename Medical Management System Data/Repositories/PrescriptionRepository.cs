@@ -19,28 +19,28 @@ namespace Medical_Management_System_Data.Repositories
             _context = context;
         }
 
-        public Prescription AddPrescription(Prescription prescription)
+        public Prescription AddPrescriptionAsync(Prescription prescription)
         {
             _context.PrescriptionList.Add(prescription);
             return prescription;
         }
 
-        public void DeletePrescription(int id)
+        public void DeletePrescriptionAsync(int id)
         {
             _context.PrescriptionList.Remove(_context.PrescriptionList.ToList().Find(c => c.PrescriptionId == id));
         }
 
-        public Prescription GetById(int id)
+        public Prescription GetByIdAsync(int id)
         {
             return _context.PrescriptionList.Include(a => a.Patient).First(c => c.PrescriptionId == id);
         }
 
-        public List<Prescription> GetPrescriptions()
+        public List<Prescription> GetPrescriptionsAsync()
         {
             return _context.PrescriptionList.ToList();
         }
 
-        public Prescription UpdatePrescription(int id, Prescription prescription)
+        public Prescription UpdatePrescriptionAsync(int id, Prescription prescription)
         {
             var updatePrescription = _context.PrescriptionList.ToList().Find(u => u.PatientId == id);
             if (updatePrescription != null)

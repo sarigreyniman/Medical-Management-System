@@ -2069,11 +2069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Medical Management System\\Medical Management System Data\\Medical Management System Data.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\Programming\\2024\\.NET Core\\Medical Management System\\Medical Management System Data\\Medical Management System Data.csproj",
       "projectName": "Medical Management System Data",
-      "projectPath": "C:\\Users\\User\\Desktop\\Medical Management System\\Medical Management System Data\\Medical Management System Data.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\Programming\\2024\\.NET Core\\Medical Management System\\Medical Management System Data\\Medical Management System Data.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Medical Management System\\Medical Management System Data\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\Programming\\2024\\.NET Core\\Medical Management System\\Medical Management System Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2094,8 +2094,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Medical Management System\\Medical Management System Core\\Medical Management System Core.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Medical Management System\\Medical Management System Core\\Medical Management System Core.csproj"
+            "C:\\Users\\User\\Documents\\Programming\\2024\\.NET Core\\Medical Management System\\Medical Management System Core\\Medical Management System Core.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\Programming\\2024\\.NET Core\\Medical Management System\\Medical Management System Core\\Medical Management System Core.csproj"
             }
           }
         }

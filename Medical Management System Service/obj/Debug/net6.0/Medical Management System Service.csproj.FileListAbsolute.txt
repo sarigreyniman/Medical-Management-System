@@ -19,3 +19,11 @@ C:\Users\User\Desktop\Medical Management System\Medical Management System Servic
 C:\Users\User\Desktop\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.pdb
 C:\Users\User\Desktop\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.genruntimeconfig.cache
 C:\Users\User\Desktop\Medical Management System\Medical Management System Service\obj\Debug\net6.0\ref\Medical Management System Service.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.AssemblyInfo.cs
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\refint\Medical Management System Service.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System Service\obj\Debug\net6.0\Medical Management System Service.pdb

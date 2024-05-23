@@ -9,14 +9,14 @@ namespace Medical_Management_System_Core.Services
 {
     public interface IAppointmentService
     {
-        List<Appointment> GetAppointmentes();
+        List<Appointment> GetAppointmentesAsync();
 
-        Appointment GetById(int id);
+        Appointment GetByIdAsync(int id);
 
-        Appointment AddAppointment(Appointment appointment);
+        Appointment AddAppointmentAsync(Appointment appointment);
 
-        Appointment UpdateAppointment(int id, Appointment appointment);
+        Appointment UpdateAppointmentAsync(int id, Appointment appointment);
 
-        void DeleteAppointment(int id);
+        void DeleteAppointmentAsync(int id);
     }
 }

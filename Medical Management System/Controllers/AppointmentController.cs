@@ -33,7 +33,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var list = _appointmentService.GetAppointmentes();
+            var list = _appointmentService.GetAppointmentesAsync();
             var listDto = _mapper.Map<IEnumerable<AppointmentDto>>(list);
             return Ok(listDto);
         }
@@ -42,7 +42,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var appointment = _appointmentService.GetById(id);
+            var appointment = _appointmentService.GetByIdAsync(id);
 
             if (appointment is null)
             {
@@ -58,7 +58,7 @@ namespace Medical_Management_System.Controllers
         public ActionResult Post([FromBody] AppointmentPostModel appointment)
         {
             var appointmentToAdd = new Appointment { AppointmentDate=appointment.AppointmentDate,DoctorName=appointment.DoctorName,PatientId=appointment.PatientId };
-            var newAppointment = _appointmentService.AddAppointment(appointmentToAdd);
+            var newAppointment = _appointmentService.AddAppointmentAsync(appointmentToAdd);
             return Ok(newAppointment);
         }
 
@@ -66,7 +66,7 @@ namespace Medical_Management_System.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Appointment appointment)
         {
-            return Ok(_appointmentService.UpdateAppointment(id, appointment));
+            return Ok(_appointmentService.UpdateAppointmentAsync(id, appointment));
 
         }
 
@@ -74,12 +74,12 @@ namespace Medical_Management_System.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var appointment = _appointmentService.GetById(id);
+            var appointment = _appointmentService.GetByIdAsync(id);
             if (appointment is null)
             {
                 return NotFound();
             }
-            _appointmentService.DeleteAppointment(id);
+            _appointmentService.DeleteAppointmentAsync(id);
             return NoContent();
         }
     }

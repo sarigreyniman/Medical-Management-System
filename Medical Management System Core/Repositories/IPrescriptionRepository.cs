@@ -9,14 +9,14 @@ namespace Medical_Management_System_Core.Repositories
 {
     public interface IPrescriptionRepository
     {
-        List<Prescription> GetPrescriptions();
+        List<Prescription> GetPrescriptionsAsync();
 
-        Prescription GetById(int id);
+        Prescription GetByIdAsync(int id);
 
-        Prescription AddPrescription(Prescription prescription);
+        Prescription AddPrescriptionAsync(Prescription prescription);
 
-        Prescription UpdatePrescription(int id, Prescription prescription);
+        Prescription UpdatePrescriptionAsync(int id, Prescription prescription);
 
-        void DeletePrescription(int id);
+        void DeletePrescriptionAsync(int id);
     }
 }

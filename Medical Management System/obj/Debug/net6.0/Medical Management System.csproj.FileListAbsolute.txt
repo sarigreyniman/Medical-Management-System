@@ -76,3 +76,13 @@ C:\Users\User\Desktop\Medical Management System\Medical Management System\obj\De
 C:\Users\User\Desktop\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.pdb
 C:\Users\User\Desktop\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.genruntimeconfig.cache
 C:\Users\User\Desktop\Medical Management System\Medical Management System\obj\Debug\net6.0\ref\Medical Management System.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.csproj.AssemblyReference.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.AssemblyInfoInputs.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.AssemblyInfo.cs
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\refint\Medical Management System.dll
+C:\Users\User\Documents\Programming\2024\.NET Core\Medical Management System\Medical Management System\obj\Debug\net6.0\Medical Management System.pdb

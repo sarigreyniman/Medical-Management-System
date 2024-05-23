@@ -32,7 +32,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var list = _prescriptionService.GetPrescriptions();
+            var list = _prescriptionService.GetPrescriptionsAsync();
             var listDto = _mapper.Map<IEnumerable<PrescriptionDto>>(list);
             return Ok(listDto);
         }
@@ -41,7 +41,7 @@ namespace Medical_Management_System.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var prescription = _prescriptionService.GetById(id);
+            var prescription = _prescriptionService.GetByIdAsync(id);
             if (prescription is null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace Medical_Management_System.Controllers
         public ActionResult Post([FromBody] PrescriptionPostModel prescription)
         {
             var prescriptionToAdd = new Prescription { Dosage = prescription.Dosage, Medication = prescription.Medication, PatientId = prescription.PatientId };
-            var newPrescription = _prescriptionService.AddPrescription(prescriptionToAdd);
+            var newPrescription = _prescriptionService.AddPrescriptionAsync(prescriptionToAdd);
             return Ok(newPrescription);
 
         }
@@ -65,7 +65,7 @@ namespace Medical_Management_System.Controllers
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] Prescription prescription)
         {
-            return Ok(_prescriptionService.UpdatePrescription(id, prescription));
+            return Ok(_prescriptionService.UpdatePrescriptionAsync(id, prescription));
 
         }
 
@@ -73,12 +73,12 @@ namespace Medical_Management_System.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var prescription = _prescriptionService.GetById(id);
+            var prescription = _prescriptionService.GetByIdAsync(id);
             if (prescription is null)
             {
                 return NotFound();
             }
-            _prescriptionService.DeletePrescription(id);
+            _prescriptionService.DeletePrescriptionAsync(id);
             return NoContent();
         }
     }
